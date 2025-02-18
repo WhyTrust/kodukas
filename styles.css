@@ -1,10 +1,78 @@
+@keyframes vikerkaar {
+    0% {
+        background-position: 0% 50%; /* Starting position */
+    }
+    100% {
+        background-position: 200% 50%; /* Moves the gradient to the right */
+    }
+}
+
+#vikerkaar {
+    background: linear-gradient(90deg, #ff007f, #ff6600, #9900cc, #33cc33, #0066ff, #ff007f);
+    background-size: 200% 200%;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: vikerkaar 2s infinite ease;
+}
+
+.konteiner {
+    min-width: 50%;
+}
+
+.konteiner * {
+    overflow: hidden;
+    width: 0;
+    animation: slide 1.1s steps(40) 1 normal both;
+}
+
 body {
+    background-color: black;
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     height: 100vh; /* Full height of the viewport */
     margin: 0;
 }
-.container {
-    text-align: center; /* Ensures text inside is centered */
+
+@keyframes slide {
+    0% {
+        width: 0; /* Start with no text */
+    }
+    100% {
+        width: 100%; /* End with full text */
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+    text-transform: lowercase;
+    font-family: 'Doto';
+    text-align: center;
+}
+
+a {
+    text-transform: lowercase;
+    font-family: 'Doto';
+    text-align: center;
+    color: white; /* Set the initial color */
+    text-decoration: none; /* Optional: Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    display: inline-block;
+}
+
+
+a:hover {
+    color: gray;
+}
+
+* {
+    cursor: wait; /* Loading cursor */
+}
+
+.jagaja {
+    max-width: 50%;
+    border: none;
+    background-color: gray;
+    height: 1px;
 }

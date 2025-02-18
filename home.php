@@ -11,6 +11,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1 id="vikerkaar"><a href="home.php" font-family="Doto">Kodukas</a></h1>
+        <div class="konteiner">
+            <h1>Tere tulemast kodukale!</h1>
+            <p>Ma teen siin asju.</p>
+            <hr class="jagaja">
+            <a href="">1. ma tahan koju</a>
+            <a href="">2. tule ja vota</a>
+        </div>
     </body>
 </html>
